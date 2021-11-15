@@ -161,7 +161,7 @@ input[type='text'] {
   .navbar-links {
     display: none;
     width: 100%;
-    height: 50%;
+    height: 55%;
     background-color: #00080f;
     margin-top: 100px;
     position: absolute;
@@ -315,20 +315,22 @@ input[type='text'] {
 .popular-movies {
   position: absolute;
   left: -40px;
-  bottom: 220px;
+  margin-top: 400px;
   text-transform: uppercase;
   transform: rotate(-90deg);
   letter-spacing: 0.3rem;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 180px auto 50px auto;
+}
+
 .movies-container {
-  position: absolute;
   display: grid;
   grid-template-columns: repeat(6, 150px);
   grid-gap: 50px 50px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 0);
   margin-top: 15px;
 }
 
@@ -420,15 +422,30 @@ input[type='text'] {
 
 /* Footer */
 
-.footer-container {
-  position: absolute;
+footer {
+  background-color: #0c1d29;
   height: 100px;
-  background: #0c1d29;
-  bottom: -135px;
-  width: 100%;
+  font-size: 14px;
 }
 
-.footer-container p {
+footer ul {
+  position: relative;
+  top: 50%;
+  text-align: left;
+  transform: translateY(-50%);
+  list-style-type: none;
+  line-height: 18px;
+  margin-left: 30px;
+}
+
+.movieflash {
+  position: relative;
   text-align: center;
-  margin-top: 40px;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 640px) {
+  footer ul {
+    margin-left: -10px;
+  }
 }
