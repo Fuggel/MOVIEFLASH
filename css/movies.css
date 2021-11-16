@@ -259,6 +259,13 @@ input[type='text'] {
     margin-top: 99px;
     height: 48%;
   }
+
+  .nav-logo img {
+    width: 70px;
+    height: 60px;
+    margin-top: 18px;
+    margin-left: 28px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
