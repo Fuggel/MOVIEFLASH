@@ -161,7 +161,7 @@ input[type='text'] {
   .navbar-links {
     display: none;
     width: 100%;
-    height: 58%;
+    height: 500px;
     background-color: #00080f;
     margin-top: 100px;
     position: absolute;
@@ -241,6 +241,7 @@ input[type='text'] {
 @media only screen and (max-width: 520px) {
   .search-box {
     width: 180px;
+    margin-left: 10px;
   }
 }
 
@@ -252,7 +253,7 @@ input[type='text'] {
 
   .navbar-links {
     margin-top: 99px;
-    height: 48%;
+    height: 502px;
   }
 
   .nav-logo img {
@@ -268,22 +269,18 @@ input[type='text'] {
     width: 150px;
     margin-left: 14px;
   }
-
-  .navbar-links {
-    height: 53%;
-  }
 }
 
 /* Slideshow */
 
 .slideshow-container img {
   width: 100%;
-  height: 350px;
+  height: 500px;
 }
 
 .arrows {
   position: relative;
-  margin-top: -200px;
+  margin-top: -280px;
   cursor: pointer;
   font-size: 2.5rem;
 }
@@ -299,7 +296,7 @@ input[type='text'] {
 
 .slideshow-container p {
   position: absolute;
-  top: 334px;
+  top: 482px;
   left: 50%;
   transform: translate(-50%, 0);
   background: rgba(0, 0, 0, 0.6);
@@ -313,7 +310,7 @@ input[type='text'] {
 
 @media only screen and (max-width: 1000px) {
   .slideshow-container p {
-    top: 358px;
+    top: 508px;
     padding: 15px;
     line-height: 1rem;
     font-size: 14px;
@@ -326,7 +323,7 @@ input[type='text'] {
 
 @media only screen and (max-width: 650px) {
   .slideshow-container p {
-    top: 370px;
+    top: 520px;
     padding: 10px;
     max-width: 80%;
     font-size: 12px;
@@ -348,7 +345,7 @@ input[type='text'] {
 .popular-movies {
   position: absolute;
   left: -40px;
-  margin-top: 400px;
+  margin-top: 490px;
   text-transform: uppercase;
   transform: rotate(-90deg);
   letter-spacing: 0.3rem;
@@ -357,14 +354,14 @@ input[type='text'] {
 .wrapper {
   display: flex;
   justify-content: center;
-  margin: 180px auto 50px auto;
+  margin: 180px auto 55px auto;
 }
 
 .movies-container {
   display: grid;
   grid-template-columns: repeat(6, 150px);
   grid-gap: 50px 50px;
-  margin-top: 15px;
+  margin-top: 100px;
 }
 
 .movies-container img {
@@ -404,12 +401,22 @@ input[type='text'] {
   .movies-container img {
     height: 180px;
   }
+
+  .popular-movies {
+    margin-top: 440px;
+  }
 }
 
 @media only screen and (max-width: 1115px) {
   .movies-container {
     grid-template-columns: repeat(4, 140px);
     grid-gap: 30px 30px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .movies-container {
+    margin-top: 110px;
   }
 }
 
@@ -476,7 +483,7 @@ input[type='text'] {
     left: 0;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: -160px;
+    margin-bottom: -255px;
     transform: none;
     letter-spacing: 0.2rem;
   }
