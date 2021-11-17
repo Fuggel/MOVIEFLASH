@@ -381,7 +381,18 @@ input[type='text'] {
 
 @media only screen and (max-width: 414px) {
   .movies-container {
-    grid-template-columns: repeat(3, 110px);
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 20px 10px;
+  }
+
+  .movies-container img {
+    height: 175px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .movies-container {
+    grid-template-columns: repeat(3, 104px);
     grid-gap: 20px 10px;
   }
 
