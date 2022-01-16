@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MOVIEFLASH - Watch Movies Online</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="icon" href="img/clapperboard.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript -->
+    <script src="main.js" defer></script>
+    <script src="form-validation.js" defer></script>
+    <script src="slideshow.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navigation bar -->
+      <nav class="navbar">
+        <div class="nav-logo">
+          <a href="index.html"><img src="img/Logo.png" alt="" /></a>
+        </div>
+
+        <!-- Searchbar -->
+        <div class="container">
+          <div class="search-box">
+            <input type="text" class="search" placeholder="Search..." />
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <a class="toggle-button" href="#">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+
+        <!-- Navigation links -->
+        <div class="navbar-links">
+          <ul>
+            <li class="nav-buttons"><a href="movies.html">Movies</a></li>
+            <li class="nav-buttons"><a href="series.html">Series</a></li>
+            <li class="cta-button">
+              <a href="login.html" class="login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Form validation -->
+    <form id="form" action="#">
+      <h1>Register</h1>
+
+      <div class="form-container">
+        <div class="gender">
+          <label for="gender">Gender:</label>
+          <input
+            type="radio"
+            id="genderM"
+            name="gender"
+            checked="checked"
+            value="male"
+          />
+          <label for="genderM">Male</label>
+          <input type="radio" id="genderF" name="gender" value="female" />
+          <label for="genderF">Female</label>
+        </div>
+
+        <div class="username form-control">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" />
+          <span id="span">Error message</span>
+        </div>
+
+        <div class="email form-control">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <span>Error message</span>
+        </div>
+
+        <div class="mobile form-control">
+          <label for="number">Mobile number:</label>
+          <input type="number" id="mobile" name="mobile" />
+          <span>Error message</span>
+        </div>
+
+        <div class="categories">
+          <label for="categories">Select Your Favorite Category</label>
+          <select name="categories" id="categories">
+            <option value="categories">Categories</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="horror">Horror</option>
+            <option value="romance">Romance</option>
+          </select>
+        </div>
+
+        <div class="password1 form-control">
+          <label for="password1">Password:</label>
+          <input type="password" id="password1" name="password1" />
+          <span>Error message</span>
+        </div>
+
+        <div class="password2 form-control">
+          <label for="password2">Confirm password:</label>
+          <input type="password" id="password2" name="password2" />
+          <span>Error message</span>
+        </div>
+
+        <div class="newsletter">
+          <input type="checkbox" name="newsletter" id="newsletter" />
+          <label>I would like to receive messages from MOVIEFLASH</label>
+        </div>
+
+        <div class="agreement form-control">
+          <input type="checkbox" name="agreement" id="agreement" />
+          <label
+            >I agree to your User Agreement and acknowledge reading your User
+            Privacy Notice.</label
+          >
+          <span>Error message</span>
+        </div>
+      </div>
+
+      <div class="submit-btn">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

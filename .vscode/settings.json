@@ -1,7 +1,4 @@
 {
-    "cSpell.words": [
-        "Datenschutz",
-        "Impressum",
-        "movieflash"
-    ]
+  "cSpell.words": ["Datenschutz", "Impressum", "movieflash"],
+  "liveServer.settings.port": 5501
 }
