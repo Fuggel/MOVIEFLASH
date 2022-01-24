@@ -297,6 +297,13 @@ footer ul {
   list-style-type: none;
   line-height: 18px;
   margin-left: 30px;
+  text-decoration: none;
+}
+
+footer ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .movieflash {
