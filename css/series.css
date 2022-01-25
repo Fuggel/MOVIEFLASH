@@ -186,6 +186,20 @@ input[type="text"] {
   transform: scale(1.2);
 }
 
+.movies-item {
+  text-align: center;
+}
+
+.movies-item p {
+  margin-top: 22px;
+}
+
+.movies-item p span {
+  line-height: 25px;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
 /* Footer */
 
 footer {
@@ -413,6 +427,10 @@ footer ul li a {
 
   .movies-container img:hover {
     transform: none;
+  }
+
+  .movies-item p {
+    margin: 10px 0;
   }
 }
 

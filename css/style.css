@@ -249,12 +249,10 @@ img {
 /* POPULAR MOVIES */
 
 .popular-movies {
-  position: absolute;
-  left: -40px;
-  margin-top: 240px;
-  text-transform: uppercase;
-  transform: rotate(-90deg);
-  letter-spacing: 0.3rem;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
 }
 
 .wrapper {
@@ -265,9 +263,9 @@ img {
 
 .movies-container {
   display: grid;
-  grid-template-columns: repeat(6, 150px);
-  grid-gap: 50px 50px;
-  margin-top: 100px;
+  grid-template-columns: repeat(8, 150px);
+  grid-gap: 30px;
+  margin-top: 80px;
 }
 
 .movies-container img {
@@ -279,6 +277,20 @@ img {
 
 .movies-container img:hover {
   transform: scale(1.2);
+}
+
+.movies-item {
+  text-align: center;
+}
+
+.movies-item p {
+  margin-top: 22px;
+}
+
+.movies-item p span {
+  line-height: 25px;
+  font-size: 0.9rem;
+  color: #cccccc;
 }
 
 /* Footer */
@@ -418,6 +430,10 @@ footer ul li a {
   .search-box {
     width: 200px;
   }
+
+  .popular-movies {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -467,82 +483,46 @@ footer ul li a {
 
 @media only screen and (max-width: 1500px) {
   .movies-container {
-    grid-template-columns: repeat(5, 150px);
-  }
-}
-
-@media only screen and (max-width: 1315px) {
-  .movies-container {
-    grid-template-columns: repeat(5, 150px);
-    grid-gap: 35px 35px;
-  }
-
-  .popular-movies {
-    font-size: 1.3rem;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .movies-container {
-    grid-template-columns: repeat(5, 140px);
-    grid-gap: 30px 30px;
-  }
-
-  .movies-container img {
-    height: 180px;
+    grid-template-columns: repeat(6, 150px);
   }
 }
 
 @media only screen and (max-width: 1115px) {
   .movies-container {
-    grid-template-columns: repeat(4, 140px);
-    grid-gap: 30px 30px;
+    grid-template-columns: repeat(5, 150px);
   }
 }
 
 @media only screen and (max-width: 968px) {
   .movies-container {
-    grid-template-columns: repeat(4, 120px);
-    grid-gap: 30px 40px;
-  }
-
-  .popular-movies {
-    font-size: 1.2rem;
-    left: -50px;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .movies-container {
-    grid-template-columns: repeat(4, 100px);
-    grid-gap: 30px 50px;
-  }
-
-  .movies-container img {
-    height: 160px;
-  }
-
-  .popular-movies {
-    font-size: 1rem;
+    grid-template-columns: repeat(4, 150px);
   }
 }
 
 @media only screen and (max-width: 750px) {
   .movies-container {
-    grid-template-columns: repeat(3, 110px);
+    grid-template-columns: repeat(4, 130px);
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 680px) {
   .movies-container {
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 20px 30px;
+    grid-template-columns: repeat(4, 130px);
+    grid-gap: 30px 20px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .movies-container {
+    grid-template-columns: repeat(3, 130px);
+    grid-gap: 30px 50px;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .popular-movies {
-    left: -70px;
+  .movies-container {
+    grid-template-columns: repeat(3, 130px);
+    grid-gap: 30px 20px;
   }
 }
 
@@ -555,43 +535,31 @@ footer ul li a {
   .movies-container img:hover {
     transform: none;
   }
-}
 
-@media only screen and (max-width: 499px) {
-  .popular-movies {
-    position: relative;
-    left: 0;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: -225px;
-    transform: none;
-    letter-spacing: 0.2rem;
-  }
-
-  .movies-container {
-    margin-top: 250px;
+  .movies-item p {
+    margin: 10px 0;
   }
 }
 
 @media only screen and (max-width: 414px) {
   .movies-container {
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 20px 20px;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 20px 10px;
   }
 
   .movies-container img {
-    height: 160px;
+    height: 175px;
   }
 }
 
 @media only screen and (max-width: 375px) {
   .movies-container {
-    grid-template-columns: repeat(3, 90px);
-    grid-gap: 20px 20px;
+    grid-template-columns: repeat(3, 104px);
+    grid-gap: 20px 10px;
   }
 
   .movies-container img {
-    height: 140px;
+    height: 150px;
   }
 }
 
