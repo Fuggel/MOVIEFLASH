@@ -328,6 +328,7 @@ img {
   width: 40px;
   background: #ffffff;
   border-radius: 50%;
+  border: 2px solid #ffffff;
   transition: 0.01s ease-in-out;
 }
 
