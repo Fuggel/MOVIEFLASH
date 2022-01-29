@@ -183,7 +183,7 @@ input[type="text"] {
 }
 
 .movies-container img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .movies-item {
@@ -191,7 +191,7 @@ input[type="text"] {
 }
 
 .movies-item p {
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .movies-item p span {
