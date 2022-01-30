@@ -1,6 +1,6 @@
 // Open Movies Popup
 
-function toggle() {
-  let popup = document.querySelector(".movie-popup");
+function toggle(target) {
+  let popup = document.querySelector(target);
   popup.classList.toggle("active");
 }

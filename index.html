@@ -109,13 +109,17 @@
         <div class="movies-item">
           <img
             src="img-action-movies/nobody.jpg"
-            onclick="toggle()"
+            onclick="toggle('#nobody')"
             alt="nobody-movie"
           />
           <p>Nobody <br /><span>(2021)</span></p>
 
-          <div class="movie-popup">
-            <img class="close" src="img/cancel.png" onclick="toggle()" />
+          <div class="movie-popup" id="nobody">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#nobody')"
+            />
             <div class="popup-wrapper">
               <video src="videos/Nobody.mp4" controls="true"></video>
               <div class="movie-popup-text">
@@ -158,9 +162,50 @@
         <div class="movies-item">
           <img
             src="img-action-movies/raya.jpg"
+            onclick="toggle('#raya')"
             alt="raya-and-the-last-dragon"
           />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="raya">
+            <img class="close" src="img/cancel.png" onclick="toggle('#raya')" />
+            <div class="popup-wrapper">
+              <video src="videos/Nobody.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>raya</h2>
+                <p>
+                  A nobody. When two thieves break into his suburban home one
+                  night, Hutch declines to defend himself or his family, hoping
+                  to prevent serious violence. His teenage son, Blake (Gage
+                  Munroe, The Shack), is disappointed in him and his wife, Becca
+                  (Connie Nielsen, Wonder Woman), seems to pull only further
+                  away.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Comedy, Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>1h 32m</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Ilya Naishuller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release Date:</td>
+                    <td>Apr 15, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
