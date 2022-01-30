@@ -20,6 +20,7 @@
     <!-- JavaScript -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="main.js" defer></script>
+    <script src="popup.js" defer></script>
     <script src="form-validation.js" defer></script>
     <script src="slideshow.js" defer></script>
   </head>
@@ -70,46 +71,420 @@
     <div class="wrapper">
       <div class="movies-container">
         <div class="movies-item">
-          <img src="img-action-movies/nobody.jpg" alt="nobody-movie" />
+          <img
+            src="img-action-movies/nobody.jpg"
+            onclick="toggle('#nobody')"
+            alt="nobody-movie"
+          />
           <p>Nobody <br /><span>(2021)</span></p>
+
+          <div class="movie-popup" id="nobody">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#nobody')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/Nobody.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Nobody</h2>
+                <p>
+                  A nobody. When two thieves break into his suburban home one
+                  night, Hutch declines to defend himself or his family, hoping
+                  to prevent serious violence. His teenage son, Blake (Gage
+                  Munroe, The Shack), is disappointed in him and his wife, Becca
+                  (Connie Nielsen, Wonder Woman), seems to pull only further
+                  away.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Comedy, Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>92 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Ilya Naishuller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 15, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
           <img
             src="img-action-movies/raya.jpg"
+            onclick="toggle('#raya')"
             alt="raya-and-the-last-dragon"
           />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="raya">
+            <img class="close" src="img/cancel.png" onclick="toggle('#raya')" />
+            <div class="popup-wrapper">
+              <video src="videos/raya.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Raya and the Last Dragon</h2>
+                <p>
+                  Raya has long heard the stories of the last dragon from her
+                  father Benja. As a villainous force was working its way across
+                  the land, turning people into stone, magical dragons united
+                  their forces together into a stone and one named Sisu used it
+                  to stop the pending apocalypse. She sacrificed herself in the
+                  process, although rumors persist that she survived.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Animation, Action & Adventure</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>107 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Don Hall</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 5, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/sas.jpg" alt="S.A.S. Red-Notice" />
+          <img
+            src="img-action-movies/sas.jpg"
+            onclick="toggle('#sas')"
+            alt="S.A.S. Red-Notice"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="sas">
+            <img class="close" src="img/cancel.png" onclick="toggle('#sas')" />
+            <div class="popup-wrapper">
+              <video src="videos/sas.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>S.A.S. Red Notice</h2>
+                <p>
+                  Tom Buckingham, a special forces operator, is taking Dr.
+                  Sophie Hart from London to Paris to propose. When their train
+                  is deep inside the Channel Tunnel, Grace Lewis and her team of
+                  heavily armed war criminals seize the train and hold hundreds
+                  of passengers hostage. Grace threatens to expose the British
+                  governments darkest secrets and blow up the Channel Tunnel if
+                  her ransom demands are not met. Unarmed and cut off from his
+                  counter terror team, Tom is the only hope that Sophie and the
+                  other passengers have to make it out alive.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>123 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Magnus Martens</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 12, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/takeback.jpg" alt="take-back" />
+          <img
+            src="img-action-movies/takeback.jpg"
+            onclick="toggle('#takeback')"
+            alt="take-back"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="takeback">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#takeback')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/takeback.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Take Back</h2>
+                <p>
+                  Zara and Brian are living the perfect small town life when a
+                  mysterious stranger from Zara's secret past kidnaps their
+                  daughter and now they must race to save her life.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>89 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Christian Sesma</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Jun 18, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/theredneg.jpg" alt="the-redneg" />
+          <img
+            src="img-action-movies/theredneg.jpg"
+            onclick="toggle('#redneg')"
+            alt="the-redneg"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="redneg">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#redneg')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/redneg.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>The Redneg</h2>
+                <p>
+                  The Redneg takes place in the near future, in a fallen world
+                  after a devastating world war between woman and man. Only one
+                  percent of the world's population has survived the war and
+                  most of them are women. The few surviving men are being killed
+                  or captured by female groups, driven by the vision and the
+                  determination to build a new world, ruled only by women. Due
+                  to the decay of civilization, the survivors from around the
+                  world seek new beginnings in the woods up north in
+                  Scandinavia.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Adventure & Drama</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>90 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Luc Ziann</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 02, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/thunderforce.jpg" alt="thunder-force" />
+          <img
+            src="img-action-movies/thunderforce.jpg"
+            onclick="toggle('#thunderforce')"
+            alt="thunder-force"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="thunderforce">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#thunderforce')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/thunderforce.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Thunder Force</h2>
+                <p>
+                  In a world terrorized by super-villains, one woman has
+                  developed the process to give superpowers to regular people.
+                  But when scientist Emily Stanton accidentally imbues her
+                  estranged best-friend with incredible abilities, the two women
+                  must become the first superhero team. Now, it is up to Thunder
+                  Force to battle the super-powered Miscreants and save Chicago
+                  from the clutches of The King
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Adventure & Comedy</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>106 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Ben Falcone</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 09, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/triggerpoint.jpg" alt="trigger-point" />
+          <img
+            src="img-action-movies/triggerpoint.jpg"
+            onclick="toggle('#triggerpoint')"
+            alt="trigger-point"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="triggerpoint">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#triggerpoint')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/triggerpoint.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Trigger Point</h2>
+                <p>
+                  Follows Nicolas Shaw, a retired U.S. special operative who
+                  becomes part of an elite "invisible" team that quietly takes
+                  out the worst villains around the world.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Mystery & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>85 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Brad Turner</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 23, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/vanquish.jpg" alt="vanquish" />
+          <img
+            src="img-action-movies/vanquish.jpg"
+            onclick="toggle('#vanquish')"
+            alt="vanquish"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="vanquish">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#vanquish')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/vanquish.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Vanquish</h2>
+                <p>
+                  A mother, Victoria (Rose), is trying to put her dark past as a
+                  Russian drug courier behind her, but retired cop Damon
+                  (Freeman) forces Victoria to do his bidding by holding her
+                  daughter hostage. Now, Victoria must use guns, guts, and a
+                  motorcycle to take out a series of violent gangsters - or she
+                  may never see her child again.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>96 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>George Gallo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 16, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -124,47 +499,422 @@
         <div class="movies-item">
           <img
             src="img-action-movies/forthesake.jpg"
+            onclick="toggle('#vicious')"
             alt="for-the-sake-of-vicious"
           />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="vicious">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#vicious')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/vicious.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>For the Sake of Vicious</h2>
+                <p>
+                  An overworked nurse returns home to find a maniac hiding out
+                  with a bruised and beaten hostage. When an unexpected wave of
+                  violent intruders descend upon her home, it becomes a fight
+                  for survival.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Horror & Mystery</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>81 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Gabriel Carrer</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Sep 02, 2020</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/godzilla.jpg" alt="godzilla" />
+          <img
+            src="img-action-movies/godzilla.jpg"
+            onclick="toggle('#godzilla')"
+            alt="godzilla"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="godzilla">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#godzilla')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/godzilla.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Godzilla vs. Kong</h2>
+                <p>
+                  Legends collide as Godzilla and Kong, the two most powerful
+                  forces of nature, clash on the big screen in a spectacular
+                  battle for the ages. As a squadron embarks on a perilous
+                  mission into fantastic uncharted terrain, unearthing clues to
+                  the Titans' very origins and mankind's survival, a conspiracy
+                  threatens to wipe the creatures, both good and bad, from the
+                  face of the earth forever.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Sci-Fi & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>117 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Adam Wingard</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 24, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/mortalkombat.jpg" alt="mortalkombat" />
+          <img
+            src="img-action-movies/mortalkombat.jpg"
+            onclick="toggle('#mortalkombat')"
+            alt="mortalkombat"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="mortalkombat">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#mortalkombat')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/mortalkombat.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Mortal Kombat</h2>
+                <p>
+                  MMA fighter Cole Young (Lewis Tan), accustomed to taking a
+                  beating for money, is unaware of his heritage-or why
+                  Outworld's Emperor Shang Tsung (Chin Han) has sent his best
+                  warrior, Sub-Zero (Joe Taslim), an otherworldly Cryomancer, to
+                  hunt Cole down. Fearing for his family's safety, Cole goes in
+                  search of Sonya Blade (Jessica McNamee) at the direction of
+                  Jax (Mehcad Brooks), a Special Forces Major who bears the same
+                  strange dragon marking Cole was born with.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Advemtire & Fantasy</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>110 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Simon McQuoid</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 08, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
           <img
             src="img-action-movies/raya.jpg"
+            onclick="toggle('#raya')"
             alt="raya-and-the-last-dragon"
           />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="raya">
+            <img class="close" src="img/cancel.png" onclick="toggle('#raya')" />
+            <div class="popup-wrapper">
+              <video src="videos/raya.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Raya and the Last Dragon</h2>
+                <p>
+                  Raya has long heard the stories of the last dragon from her
+                  father Benja. As a villainous force was working its way across
+                  the land, turning people into stone, magical dragons united
+                  their forces together into a stone and one named Sisu used it
+                  to stop the pending apocalypse. She sacrificed herself in the
+                  process, although rumors persist that she survived.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Animation, Action & Adventure</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>107 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Don Hall</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 5, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/sas.jpg" alt="S.A.S. Red-Notice" />
+          <img
+            src="img-action-movies/sas.jpg"
+            onclick="toggle('#sas')"
+            alt="S.A.S. Red-Notice"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="sas">
+            <img class="close" src="img/cancel.png" onclick="toggle('#sas')" />
+            <div class="popup-wrapper">
+              <video src="videos/sas.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>S.A.S. Red Notice</h2>
+                <p>
+                  Tom Buckingham, a special forces operator, is taking Dr.
+                  Sophie Hart from London to Paris to propose. When their train
+                  is deep inside the Channel Tunnel, Grace Lewis and her team of
+                  heavily armed war criminals seize the train and hold hundreds
+                  of passengers hostage. Grace threatens to expose the British
+                  governments darkest secrets and blow up the Channel Tunnel if
+                  her ransom demands are not met. Unarmed and cut off from his
+                  counter terror team, Tom is the only hope that Sophie and the
+                  other passengers have to make it out alive.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>123 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Magnus Martens</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 12, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/takeback.jpg" alt="take-back" />
-          <p>Lorem ipsum dolor sit amet<br /><span>(2022)</span></p>
-        </div>
-
-        <div class="movies-item">
-          <img src="img-action-movies/theredneg.jpg" alt="the-redneg" />
+          <img
+            src="img-action-movies/takeback.jpg"
+            onclick="toggle('#takeback')"
+            alt="take-back"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="takeback">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#takeback')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/takeback.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Take Back</h2>
+                <p>
+                  Zara and Brian are living the perfect small town life when a
+                  mysterious stranger from Zara's secret past kidnaps their
+                  daughter and now they must race to save her life.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>89 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Christian Sesma</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Jun 18, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/thunderforce.jpg" alt="thunder-force" />
+          <img
+            src="img-action-movies/theredneg.jpg"
+            onclick="toggle('#redneg')"
+            alt="the-redneg"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="redneg">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#redneg')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/redneg.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>The Redneg</h2>
+                <p>
+                  The Redneg takes place in the near future, in a fallen world
+                  after a devastating world war between woman and man. Only one
+                  percent of the world's population has survived the war and
+                  most of them are women. The few surviving men are being killed
+                  or captured by female groups, driven by the vision and the
+                  determination to build a new world, ruled only by women. Due
+                  to the decay of civilization, the survivors from around the
+                  world seek new beginnings in the woods up north in
+                  Scandinavia.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Adventure & Drama</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>90 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Luc Ziann</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 02, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="movies-item">
+          <img
+            src="img-action-movies/thunderforce.jpg"
+            onclick="toggle('#thunderforce')"
+            alt="thunder-force"
+          />
+          <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="thunderforce">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#thunderforce')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/thunderforce.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Thunder Force</h2>
+                <p>
+                  In a world terrorized by super-villains, one woman has
+                  developed the process to give superpowers to regular people.
+                  But when scientist Emily Stanton accidentally imbues her
+                  estranged best-friend with incredible abilities, the two women
+                  must become the first superhero team. Now, it is up to Thunder
+                  Force to battle the super-powered Miscreants and save Chicago
+                  from the clutches of The King
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Adventure & Comedy</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>106 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Ben Falcone</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 09, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -177,43 +927,428 @@
     <div class="wrapper">
       <div class="movies-container">
         <div class="movies-item">
-          <img src="img-action-movies/sas.jpg" alt="S.A.S. Red-Notice" />
+          <img
+            src="img-action-movies/sas.jpg"
+            onclick="toggle('#sas')"
+            alt="S.A.S. Red-Notice"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="sas">
+            <img class="close" src="img/cancel.png" onclick="toggle('#sas')" />
+            <div class="popup-wrapper">
+              <video src="videos/sas.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>S.A.S. Red Notice</h2>
+                <p>
+                  Tom Buckingham, a special forces operator, is taking Dr.
+                  Sophie Hart from London to Paris to propose. When their train
+                  is deep inside the Channel Tunnel, Grace Lewis and her team of
+                  heavily armed war criminals seize the train and hold hundreds
+                  of passengers hostage. Grace threatens to expose the British
+                  governments darkest secrets and blow up the Channel Tunnel if
+                  her ransom demands are not met. Unarmed and cut off from his
+                  counter terror team, Tom is the only hope that Sophie and the
+                  other passengers have to make it out alive.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>123 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Magnus Martens</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 12, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/takeback.jpg" alt="take-back" />
+          <img
+            src="img-action-movies/takeback.jpg"
+            onclick="toggle('#takeback')"
+            alt="take-back"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="takeback">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#takeback')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/takeback.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Take Back</h2>
+                <p>
+                  Zara and Brian are living the perfect small town life when a
+                  mysterious stranger from Zara's secret past kidnaps their
+                  daughter and now they must race to save her life.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>89 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Christian Sesma</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Jun 18, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/theredneg.jpg" alt="the-redneg" />
+          <img
+            src="img-action-movies/theredneg.jpg"
+            onclick="toggle('#redneg')"
+            alt="the-redneg"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="redneg">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#redneg')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/redneg.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>The Redneg</h2>
+                <p>
+                  The Redneg takes place in the near future, in a fallen world
+                  after a devastating world war between woman and man. Only one
+                  percent of the world's population has survived the war and
+                  most of them are women. The few surviving men are being killed
+                  or captured by female groups, driven by the vision and the
+                  determination to build a new world, ruled only by women. Due
+                  to the decay of civilization, the survivors from around the
+                  world seek new beginnings in the woods up north in
+                  Scandinavia.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Adventure & Drama</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>90 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Luc Ziann</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 02, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/thunderforce.jpg" alt="thunder-force" />
+          <img
+            src="img-action-movies/thunderforce.jpg"
+            onclick="toggle('#thunderforce')"
+            alt="thunder-force"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="thunderforce">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#thunderforce')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/thunderforce.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Thunder Force</h2>
+                <p>
+                  In a world terrorized by super-villains, one woman has
+                  developed the process to give superpowers to regular people.
+                  But when scientist Emily Stanton accidentally imbues her
+                  estranged best-friend with incredible abilities, the two women
+                  must become the first superhero team. Now, it is up to Thunder
+                  Force to battle the super-powered Miscreants and save Chicago
+                  from the clutches of The King
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Adventure & Comedy</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>106 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Ben Falcone</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 09, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/triggerpoint.jpg" alt="trigger-point" />
+          <img
+            src="img-action-movies/triggerpoint.jpg"
+            onclick="toggle('#triggerpoint')"
+            alt="trigger-point"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="triggerpoint">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#triggerpoint')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/triggerpoint.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Trigger Point</h2>
+                <p>
+                  Follows Nicolas Shaw, a retired U.S. special operative who
+                  becomes part of an elite "invisible" team that quietly takes
+                  out the worst villains around the world.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Mystery & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>85 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Brad Turner</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 23, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/vanquish.jpg" alt="vanquish" />
+          <img
+            src="img-action-movies/vanquish.jpg"
+            onclick="toggle('#vanquish')"
+            alt="vanquish"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="vanquish">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#vanquish')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/vanquish.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Vanquish</h2>
+                <p>
+                  A mother, Victoria (Rose), is trying to put her dark past as a
+                  Russian drug courier behind her, but retired cop Damon
+                  (Freeman) forces Victoria to do his bidding by holding her
+                  daughter hostage. Now, Victoria must use guns, guts, and a
+                  motorcycle to take out a series of violent gangsters - or she
+                  may never see her child again.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>96 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>George Gallo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 16, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/theredneg.jpg" alt="the-redneg" />
+          <img
+            src="img-action-movies/theredneg.jpg"
+            onclick="toggle('#redneg')"
+            alt="the-redneg"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="redneg">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#redneg')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/redneg.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>The Redneg</h2>
+                <p>
+                  The Redneg takes place in the near future, in a fallen world
+                  after a devastating world war between woman and man. Only one
+                  percent of the world's population has survived the war and
+                  most of them are women. The few surviving men are being killed
+                  or captured by female groups, driven by the vision and the
+                  determination to build a new world, ruled only by women. Due
+                  to the decay of civilization, the survivors from around the
+                  world seek new beginnings in the woods up north in
+                  Scandinavia.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Adventure & Drama</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>90 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Luc Ziann</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 02, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/thunderforce.jpg" alt="thunder-force" />
+          <img
+            src="img-action-movies/thunderforce.jpg"
+            onclick="toggle('#thunderforce')"
+            alt="thunder-force"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="thunderforce">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#thunderforce')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/thunderforce.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Thunder Force</h2>
+                <p>
+                  In a world terrorized by super-villains, one woman has
+                  developed the process to give superpowers to regular people.
+                  But when scientist Emily Stanton accidentally imbues her
+                  estranged best-friend with incredible abilities, the two women
+                  must become the first superhero team. Now, it is up to Thunder
+                  Force to battle the super-powered Miscreants and save Chicago
+                  from the clutches of The King
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Adventure & Comedy</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>106 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Ben Falcone</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 09, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -226,46 +1361,425 @@
     <div class="wrapper">
       <div class="movies-container">
         <div class="movies-item">
-          <img src="img-action-movies/godzilla.jpg" alt="godzilla" />
+          <img
+            src="img-action-movies/godzilla.jpg"
+            onclick="toggle('#godzilla')"
+            alt="godzilla"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="godzilla">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#godzilla')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/godzilla.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Godzilla vs. Kong</h2>
+                <p>
+                  Legends collide as Godzilla and Kong, the two most powerful
+                  forces of nature, clash on the big screen in a spectacular
+                  battle for the ages. As a squadron embarks on a perilous
+                  mission into fantastic uncharted terrain, unearthing clues to
+                  the Titans' very origins and mankind's survival, a conspiracy
+                  threatens to wipe the creatures, both good and bad, from the
+                  face of the earth forever.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Sci-Fi & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>117 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Adam Wingard</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 24, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/mortalkombat.jpg" alt="mortalkombat" />
+          <img
+            src="img-action-movies/mortalkombat.jpg"
+            onclick="toggle('#mortalkombat')"
+            alt="mortalkombat"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="mortalkombat">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#mortalkombat')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/mortalkombat.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Mortal Kombat</h2>
+                <p>
+                  MMA fighter Cole Young (Lewis Tan), accustomed to taking a
+                  beating for money, is unaware of his heritage-or why
+                  Outworld's Emperor Shang Tsung (Chin Han) has sent his best
+                  warrior, Sub-Zero (Joe Taslim), an otherworldly Cryomancer, to
+                  hunt Cole down. Fearing for his family's safety, Cole goes in
+                  search of Sonya Blade (Jessica McNamee) at the direction of
+                  Jax (Mehcad Brooks), a Special Forces Major who bears the same
+                  strange dragon marking Cole was born with.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Advemtire & Fantasy</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>110 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Simon McQuoid</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 08, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
           <img
             src="img-action-movies/raya.jpg"
+            onclick="toggle('#raya')"
             alt="raya-and-the-last-dragon"
           />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="raya">
+            <img class="close" src="img/cancel.png" onclick="toggle('#raya')" />
+            <div class="popup-wrapper">
+              <video src="videos/raya.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Raya and the Last Dragon</h2>
+                <p>
+                  Raya has long heard the stories of the last dragon from her
+                  father Benja. As a villainous force was working its way across
+                  the land, turning people into stone, magical dragons united
+                  their forces together into a stone and one named Sisu used it
+                  to stop the pending apocalypse. She sacrificed herself in the
+                  process, although rumors persist that she survived.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Animation, Action & Adventure</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>107 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Don Hall</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 5, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/sas.jpg" alt="S.A.S. Red-Notice" />
+          <img
+            src="img-action-movies/sas.jpg"
+            onclick="toggle('#sas')"
+            alt="S.A.S. Red-Notice"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="sas">
+            <img class="close" src="img/cancel.png" onclick="toggle('#sas')" />
+            <div class="popup-wrapper">
+              <video src="videos/sas.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>S.A.S. Red Notice</h2>
+                <p>
+                  Tom Buckingham, a special forces operator, is taking Dr.
+                  Sophie Hart from London to Paris to propose. When their train
+                  is deep inside the Channel Tunnel, Grace Lewis and her team of
+                  heavily armed war criminals seize the train and hold hundreds
+                  of passengers hostage. Grace threatens to expose the British
+                  governments darkest secrets and blow up the Channel Tunnel if
+                  her ransom demands are not met. Unarmed and cut off from his
+                  counter terror team, Tom is the only hope that Sophie and the
+                  other passengers have to make it out alive.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>123 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Magnus Martens</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 12, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/takeback.jpg" alt="take-back" />
+          <img
+            src="img-action-movies/takeback.jpg"
+            onclick="toggle('#takeback')"
+            alt="take-back"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="takeback">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#takeback')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/takeback.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Take Back</h2>
+                <p>
+                  Zara and Brian are living the perfect small town life when a
+                  mysterious stranger from Zara's secret past kidnaps their
+                  daughter and now they must race to save her life.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>89 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Christian Sesma</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Jun 18, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/theredneg.jpg" alt="the-redneg" />
+          <img
+            src="img-action-movies/theredneg.jpg"
+            onclick="toggle('#redneg')"
+            alt="the-redneg"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="redneg">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#redneg')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/redneg.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>The Redneg</h2>
+                <p>
+                  The Redneg takes place in the near future, in a fallen world
+                  after a devastating world war between woman and man. Only one
+                  percent of the world's population has survived the war and
+                  most of them are women. The few surviving men are being killed
+                  or captured by female groups, driven by the vision and the
+                  determination to build a new world, ruled only by women. Due
+                  to the decay of civilization, the survivors from around the
+                  world seek new beginnings in the woods up north in
+                  Scandinavia.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Adventure & Drama</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>90 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Luc Ziann</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 02, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/thunderforce.jpg" alt="thunder-force" />
+          <img
+            src="img-action-movies/thunderforce.jpg"
+            onclick="toggle('#thunderforce')"
+            alt="thunder-force"
+          />
           <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="thunderforce">
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#thunderforce')"
+            />
+            <div class="popup-wrapper">
+              <video src="videos/thunderforce.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>Thunder Force</h2>
+                <p>
+                  In a world terrorized by super-villains, one woman has
+                  developed the process to give superpowers to regular people.
+                  But when scientist Emily Stanton accidentally imbues her
+                  estranged best-friend with incredible abilities, the two women
+                  must become the first superhero team. Now, it is up to Thunder
+                  Force to battle the super-powered Miscreants and save Chicago
+                  from the clutches of The King
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action, Adventure & Comedy</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>106 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Ben Falcone</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Apr 09, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="movies-item">
-          <img src="img-action-movies/sas.jpg" alt="S.A.S. Red-Notice" />
-          <p>Lorem ipsum dolor sit amet<br /><span>(2022)</span></p>
+          <img
+            src="img-action-movies/sas.jpg"
+            onclick="toggle('#sas')"
+            alt="S.A.S. Red-Notice"
+          />
+          <p>Lorem ipsum dolor sit amet <br /><span>(2022)</span></p>
+
+          <div class="movie-popup" id="sas">
+            <img class="close" src="img/cancel.png" onclick="toggle('#sas')" />
+            <div class="popup-wrapper">
+              <video src="videos/sas.mp4" controls="true"></video>
+              <div class="movie-popup-text">
+                <h2>S.A.S. Red Notice</h2>
+                <p>
+                  Tom Buckingham, a special forces operator, is taking Dr.
+                  Sophie Hart from London to Paris to propose. When their train
+                  is deep inside the Channel Tunnel, Grace Lewis and her team of
+                  heavily armed war criminals seize the train and hold hundreds
+                  of passengers hostage. Grace threatens to expose the British
+                  governments darkest secrets and blow up the Channel Tunnel if
+                  her ransom demands are not met. Unarmed and cut off from his
+                  counter terror team, Tom is the only hope that Sophie and the
+                  other passengers have to make it out alive.
+                </p>
+
+                <table>
+                  <tr>
+                    <td>Genre:</td>
+                    <td>Action & Thriller</td>
+                  </tr>
+
+                  <tr>
+                    <td>Runtime:</td>
+                    <td>123 minutes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Director:</td>
+                    <td>Magnus Martens</td>
+                  </tr>
+
+                  <tr>
+                    <td>Release date:</td>
+                    <td>Mar 12, 2021</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
