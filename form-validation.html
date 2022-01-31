@@ -8,7 +8,7 @@
     <title>MOVIEFLASH - Register Now</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/test.css" />
+    <link rel="stylesheet" href="css/form-validation.css" />
     <link rel="icon" href="img/clapperboard.png" />
     <link
       rel="stylesheet"
@@ -18,8 +18,8 @@
     />
 
     <!-- JavaScript -->
-    <script src="main.js" defer></script>
-    <script src="test.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="form-validation.js" defer></script>
   </head>
   <body>
     <header>
@@ -52,7 +52,7 @@
             <li class="nav-buttons"><a href="movies.html">Movies</a></li>
             <li class="nav-buttons"><a href="series.html">Series</a></li>
             <li class="cta-button">
-              <a href="login.html" class="login">Login</a>
+              <a href="form-validation.html" class="login">Login</a>
             </li>
           </ul>
         </div>
@@ -65,7 +65,7 @@
 
       <div class="form-wrapper">
         <div class="gender-container">
-          <p>Gender:</p>
+          <p>* Gender:</p>
         <p>
           <input type="radio" id="genderM" name="gender" value="male" />
           <label for="genderM">Male</label>
@@ -78,17 +78,17 @@
       </div>
 
         <p>
-          <label for="username">Username:</label>
+          <label for="username">* Username:</label>
           <input type="text" id="username" name="username" />
         </p>
 
         <p>
-          <label for="email">Email:</label>
+          <label for="email">* Email:</label>
           <input type="email" id="email" name="email" />
         </p>
 
         <p>
-          <label for="mobile">Mobile:</label>
+          <label for="mobile">* Mobile:</label>
           <input type="number" id="mobile" name="mobile" />
         </p>
 
@@ -104,12 +104,12 @@
         </p>
 
         <p>
-          <label for="password1">Password:</label>
+          <label for="password1">* Password:</label>
           <input type="password" id="password1" name="password1" />
         </p>
 
         <p>
-          <label for="password2">Confirm Password:</label>
+          <label for="password2">* Confirm Password:</label>
           <input type="password" id="password2" name="password2" />
         </p>
 
@@ -122,7 +122,7 @@
         <p>
           <input type="checkbox" name="agreement" id="agreement" />
           <label for="agreement"
-            >I agree to your User Agreement and acknowledge reading your User
+            >* I agree to your User Agreement and acknowledge reading your User
             Privacy Notice.</label
           >
         </p>
@@ -135,7 +135,9 @@
       </div>
     </form>
 
+  <div class="error-wrapper">
     <div id="errorMessages"></div>
+  </div>
   </div>
 
     <!-- Footer -->
