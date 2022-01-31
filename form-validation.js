@@ -52,6 +52,7 @@ function checkInputs() {
     setErrorFor(agreement, "Agreement cannot be unchecked");
   }
 }
+checkInputs();
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
