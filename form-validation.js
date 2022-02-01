@@ -7,11 +7,15 @@ function init() {
   regForm = document.forms["registration"];
 
   // Listen for form submit
-  regForm["register"].onclick = validateForm;
+  regForm["register"].addEventListener("click", (e) => {
+    validateForm(e);
+  });
 }
 
 // Function to validate form elements
-function validateForm() {
+function validateForm(e) {
+  e.preventDefault(); // prevents submit from auto reload
+
   // Array to contain all error messages
   var errorMessages = Array();
 
@@ -31,12 +35,20 @@ function validateForm() {
 
   // If username is empty
   if (!regForm["username"].value) {
-    errorMessages.push("* Please enter Username");
+    errorMessages.push("* Please enter your username");
+  } else if (!checkUser(regForm["username"].value.length)) {
+    errorMessages.push("* Username must be at least 6 characters long.");
+  }
+
+  function checkUser(userLength) {
+    if (regForm["username"].value.length > 5) {
+      return userLength;
+    }
   }
 
   // If email is empty
   if (!regForm["email"].value) {
-    errorMessages.push("* Please enter Email");
+    errorMessages.push("* Please enter your email");
   } else if (!isEmail(regForm["email"].value)) {
     errorMessages.push("* Email is not valid");
   }
@@ -49,19 +61,26 @@ function validateForm() {
 
   // If mobile is empty
   if (!regForm["mobile"].value) {
-    errorMessages.push("* Please enter Mobile");
+    errorMessages.push("* Please enter your mobile number");
+  } else if (!isMobile(regForm["mobile"].value)) {
+    errorMessages.push("* Mobile number is not valid");
   }
 
-  // If genre is empty
-  if (!regForm["genre"].value) {
-    errorMessages.push("* Please enter Category");
+  function isMobile(mobile) {
+    return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(
+      mobile
+    );
   }
 
   // If password1 is empty
   if (!regForm["password1"].value) {
-    errorMessages.push("* Please enter Password");
+    errorMessages.push("* Please enter your password");
   } else if (!checkPass(regForm["password1"].value.length)) {
     errorMessages.push("* Password must be at least 8 characters long.");
+  } else if (!checkUpper(regForm["password1"].value)) {
+    errorMessages.push("* Password needs at least one upper case letter.");
+  } else if (!checkLower(regForm["password1"].value)) {
+    errorMessages.push("* Password needs at least one lower case letter.");
   }
 
   function checkPass(pwLength) {
@@ -70,9 +89,17 @@ function validateForm() {
     }
   }
 
+  function checkUpper(upper) {
+    return /[A-Z]/.test(upper);
+  }
+
+  function checkLower(lower) {
+    return /[a-z]/.test(lower);
+  }
+
   // If password2 is empty
   if (!regForm["password2"].value) {
-    errorMessages.push("* Please confirm Password");
+    errorMessages.push("* Please confirm your password");
   }
 
   // If both passwords have values
@@ -96,6 +123,11 @@ function validateForm() {
     // Stop the form from submitting
     return false;
   }
+
+  // Reset form after 3 seconds
+  setTimeout(() => {
+    window.location.reload();
+  }, 3000);
 }
 
 function displayErrors(errors) {
@@ -103,7 +135,7 @@ function displayErrors(errors) {
 
   // If there aren't any errors
   if (!errors.length) {
-    errorBox.innerHTML = "";
+    errorBox.innerHTML = "Your registration was successful!";
     return false;
   }
 
