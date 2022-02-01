@@ -37,7 +37,16 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-// Move slider with keyboard arrows
+// Change image every 5 seconds
+
+window.onload = function () {
+  setInterval(function () {
+    plusSlides(1);
+  }, 5000);
+};
+
+// Change image with keyboard arrows
+
 document.onkeydown = checkKey;
 
 function checkKey(e) {

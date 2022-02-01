@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", init);
 
 // Function to run when DOM Content has loaded
-function init(event) {
+function init() {
   // Get registration form and keep in global scope
   regForm = document.forms["registration"];
 
@@ -11,7 +11,7 @@ function init(event) {
 }
 
 // Function to validate form elements
-function validateForm(event) {
+function validateForm() {
   // Array to contain all error messages
   var errorMessages = Array();
 
@@ -52,9 +52,22 @@ function validateForm(event) {
     errorMessages.push("* Please enter Mobile");
   }
 
+  // If genre is empty
+  if (!regForm["genre"].value) {
+    errorMessages.push("* Please enter Category");
+  }
+
   // If password1 is empty
   if (!regForm["password1"].value) {
     errorMessages.push("* Please enter Password");
+  } else if (!checkPass(regForm["password1"].value.length)) {
+    errorMessages.push("* Password must be at least 8 characters long.");
+  }
+
+  function checkPass(pwLength) {
+    if (regForm["password1"].value.length > 7) {
+      return pwLength;
+    }
   }
 
   // If password2 is empty
