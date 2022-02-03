@@ -16,7 +16,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   background-color: #00080f;
-  background-image: url("https://www.teahub.io/photos/full/335-3352052_joker-heath-ledger-wallpaper-hd.jpg");
+  background-image: url("../img/joker.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -214,8 +214,11 @@ input[type="text"] {
 .movies-container img {
   cursor: pointer;
   height: 200px;
+  border-radius: 5px;
   transform: scale(1);
   transition: 0.3s ease-in-out;
+  padding: 5px;
+  background-color: #ffffff;
 }
 
 .movies-container img:hover {
@@ -278,6 +281,7 @@ input[type="text"] {
   right: 20px;
   height: 40px;
   width: 40px;
+  padding: 0;
   background: #ffffff;
   border-radius: 50%;
   border: 2px solid #ffffff;

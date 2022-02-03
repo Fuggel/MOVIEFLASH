@@ -306,8 +306,11 @@ img {
 .movies-container img {
   cursor: pointer;
   height: 200px;
+  border-radius: 5px;
   transform: scale(1);
   transition: 0.3s ease-in-out;
+  padding: 5px;
+  background-color: #ffffff;
 }
 
 .movies-container img:hover {
@@ -370,6 +373,7 @@ img {
   right: 20px;
   height: 40px;
   width: 40px;
+  padding: 0;
   background: #ffffff;
   border-radius: 50%;
   border: 2px solid #ffffff;
