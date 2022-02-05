@@ -218,11 +218,16 @@ img {
   width: 100%;
   position: relative;
   margin: auto;
+  background-color: #00080f;
 }
 
 .slideshow-container img {
-  width: 100%;
+  max-width: 100%;
+  min-width: 70%;
   max-height: 500px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
 }
 
 .mySlides {
@@ -252,7 +257,7 @@ img {
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #971d1d;
 }
 
 .text {
@@ -264,6 +269,17 @@ img {
   border-radius: 5px;
   text-align: center;
   background-color: #bc1d1d;
+  cursor: pointer;
+  line-height: 30px;
+}
+
+.text i {
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+
+.text:hover {
+  background-color: #971d1d;
 }
 
 .numbertext {

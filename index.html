@@ -68,19 +68,27 @@
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
         <a><img src="img/harry-potter.jpg" /></a>
-        <div class="text">Harry Potter and the Half-Blood Prince</div>
+        <div onclick="toggle('#nobody')" class="text">
+          Harry Potter and the Half-Blood Prince<i
+            class="fas fa-play-circle"
+          ></i>
+        </div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
         <a><img src="img/black-widow.jpg" /></a>
-        <div class="text">Black Widow</div>
+        <div onclick="toggle('#nobody')" class="text">
+          Black Widow<i class="fas fa-play-circle"></i>
+        </div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
         <a><img src="img/nobody.jpg" /></a>
-        <div class="text">Nobody</div>
+        <div onclick="toggle('#nobody')" class="text">
+          Nobody<i class="fas fa-play-circle"></i>
+        </div>
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

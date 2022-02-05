@@ -36,11 +36,11 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-// Change image every 5 seconds
+// Change image every 10 seconds
 window.onload = function () {
   setInterval(function () {
     plusSlides(1);
-  }, 5000);
+  }, 10000);
 };
 
 // Change image with keyboard arrows
