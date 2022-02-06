@@ -3,3 +3,11 @@
 body {
   background-image: url("../img/squid-game.jpg");
 }
+
+/* Remove Background-Image from iOS devices due to bug -> 'background-attachment: fixed;' */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-image: none;
+    background-color: #00080f;
+  }
+}

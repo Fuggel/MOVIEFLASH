@@ -23,6 +23,14 @@ body {
   background-size: cover;
 }
 
+/* Remove Background-Image from iOS devices due to bug -> 'background-attachment: fixed;' */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-image: none;
+    background-color: #00080f;
+  }
+}
+
 .back-to-top {
   position: fixed;
   bottom: 16px;

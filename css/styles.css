@@ -337,8 +337,7 @@ img {
 .popular-movies {
   margin-top: 50px;
   text-align: center;
-  font-size: 1.7rem;
-  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
 }
 
 .wrapper {
@@ -589,7 +588,7 @@ footer ul li a {
   }
 
   .popular-movies {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
