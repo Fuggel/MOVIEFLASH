@@ -603,6 +603,20 @@ footer ul li a {
   .popular-movies {
     font-size: 2rem;
   }
+
+  .nav-logo img {
+    width: 95px;
+    height: 85px;
+    margin-top: 8px;
+  }
+
+  .movie-popup-text p {
+    margin-top: -10px;
+  }
+
+  .movie-popup-text table {
+    margin-top: auto;
+  }
 }
 
 @media only screen and (max-width: 375px) {

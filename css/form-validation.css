@@ -409,3 +409,11 @@ footer ul li a {
     margin-top: -11.5px !important;
   }
 }
+
+@media only screen and (max-width: 414px) {
+  .nav-logo img {
+    width: 95px;
+    height: 85px;
+    margin-top: 8px;
+  }
+}
