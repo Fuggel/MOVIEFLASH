@@ -1,6 +1,15 @@
-// Slideshow
-let slideIndex = 1; // Set slide # to 1
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
 
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+// Set slide # to 1
+var slideIndex = 1;
 // Show the current slide
 showSlides(slideIndex);
 
@@ -22,7 +31,9 @@ function showSlides(n) {
   // All of the slides in the document
   let slides = document.getElementsByClassName("mySlides");
   // All of the slide dots in the document
-  let dots = document.getElementsByClassName("dot");
+  let dots = document.getElementsByClassName("demo");
+  // The element with an id of caption
+  let captionText = document.getElementById("caption");
 
   // If slide # is greater than the total number of slides
   if (n > slides.length) {
@@ -49,24 +60,7 @@ function showSlides(n) {
 
   // Set the current slide's respective dot to the "active" class
   dots[slideIndex - 1].className += " active";
-}
 
-// Change image every 10 seconds
-window.onload = function () {
-  setInterval(function () {
-    plusSlides(1); // plusSlide activated every 10 seconds
-  }, 10000);
-};
-
-// Change image with keyboard arrows
-document.onkeydown = checkKey;
-
-function checkKey(e) {
-  if (e.keyCode == "37") {
-    // left keyboard arrow
-    plusSlides(-1);
-  } else if (e.keyCode == "39") {
-    // right keyboard arrow
-    plusSlides(1);
-  }
+  // Set the caption text to the current slide's caption text
+  captionText.innerHTML = dots[slideIndex - 1].alt;
 }

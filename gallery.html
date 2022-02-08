@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MOVIEFLASH - Top 5 Movies</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="icon" href="img/clapperboard.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <script src="js/popup.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navigation bar -->
+      <nav class="navbar">
+        <div class="nav-logo">
+          <a href="index.html"><img src="img/Logo.png" alt="" /></a>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <a class="toggle-button" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <!-- Navigation links -->
+        <div class="navbar-links">
+          <div class="search-box">
+            <input type="text" class="search" placeholder="Search..." />
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <ul>
+            <li class="nav-buttons nav-a"><a href="movies.html">Movies</a></li>
+            <li class="nav-buttons nav-a"><a href="series.html">Series</a></li>
+            <li class="cta-button nav-a">
+              <a href="form-validation.html" class="login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Back To Top -->
+    <a href="#" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <h1>Our Top 5 Movies</h1>
+
+    <!-- Lightbox -->
+    <div class="row">
+      <div class="column">
+        <img
+          src="img/harry-potter.jpg"
+          onclick="openModal();currentSlide(1)"
+          class="hover-shadow"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="img/nobody.jpg"
+          onclick="openModal();currentSlide(2)"
+          class="hover-shadow"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="img/black-widow.jpg"
+          onclick="openModal();currentSlide(3)"
+          class="hover-shadow"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="img/squid-game.jpg"
+          onclick="openModal();currentSlide(4)"
+          class="hover-shadow"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="img/joker.jpg"
+          onclick="openModal();currentSlide(5)"
+          class="hover-shadow"
+        />
+      </div>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <img src="img/harry-potter.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="img/nobody.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="img/black-widow.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="img/squid-game.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="img/joker.jpg" style="width: 100%" />
+        </div>
+
+        <!-- Next / Previous -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p onclick="toggle('#nobody')" id="caption"></p>
+
+          <div class="movies-item">
+            <div class="movie-popup" id="nobody">
+              <img
+                class="close"
+                src="img/cancel.png"
+                onclick="toggle('#nobody')"
+              />
+              <div class="popup-wrapper">
+                <video src="videos/Nobody.mp4" controls="true"></video>
+                <div class="movie-popup-text">
+                  <h2>Nobody</h2>
+                  <p>
+                    A nobody. When two thieves break into his suburban home one
+                    night, Hutch declines to defend himself or his family,
+                    hoping to prevent serious violence. His teenage son, Blake
+                    (Gage Munroe, The Shack), is disappointed in him and his
+                    wife, Becca (Connie Nielsen, Wonder Woman), seems to pull
+                    only further away.
+                  </p>
+
+                  <table>
+                    <tr>
+                      <td>Genre:</td>
+                      <td>Comedy, Action & Thriller</td>
+                    </tr>
+
+                    <tr>
+                      <td>Runtime:</td>
+                      <td>92 minutes</td>
+                    </tr>
+
+                    <tr>
+                      <td>Director:</td>
+                      <td>Ilya Naishuller</td>
+                    </tr>
+
+                    <tr>
+                      <td>Release date:</td>
+                      <td>Apr 15, 2021</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="column">
+          <img
+            class="demo"
+            src="img/harry-potter.jpg"
+            onclick="currentSlide(1)"
+            alt="Harry Potter"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo"
+            src="img/nobody.jpg"
+            onclick="currentSlide(2)"
+            alt="Nobody"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo"
+            src="img/black-widow.jpg"
+            onclick="currentSlide(3)"
+            alt="Black Widow"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo"
+            src="img/squid-game.jpg"
+            onclick="currentSlide(4)"
+            alt="Squid Game"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo"
+            src="img/joker.jpg"
+            onclick="currentSlide(5)"
+            alt="Joker"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="imprint.html">Imprint</a></li>
+        </ul>
+        <p class="movieflash">© MOVIEFLASH</p>
+      </div>
+    </footer>
+  </body>
+</html>
