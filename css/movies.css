@@ -65,9 +65,15 @@ body {
 
 .navbar {
   height: 100px;
+  z-index: 1;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   justify-content: space-between;
   background: #0c1d29;
+  margin-bottom: 150px;
 }
 
 .nav-logo img {
@@ -237,6 +243,10 @@ input[type="text"] {
   margin: 50px;
 }
 
+.fixed-container {
+  margin-top: 150px;
+}
+
 .movies-title:hover {
   background-color: #971d1d;
 }
@@ -266,6 +276,7 @@ input[type="text"] {
 
 .movies-container img:hover {
   transform: scale(1.1);
+  background-color: #971d1d;
 }
 
 .movie-popup {
@@ -331,6 +342,10 @@ input[type="text"] {
   border-radius: 50%;
   border: 2px solid #ffffff;
   transition: 0.01s ease-in-out;
+}
+
+.movie-popup .close:hover {
+  background-color: #ffffff;
 }
 
 .movies-item {

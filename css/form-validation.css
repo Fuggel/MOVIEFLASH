@@ -52,7 +52,12 @@ body {
 
 .navbar {
   height: 100px;
+  z-index: 1;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   justify-content: space-between;
   background: #0c1d29;
 }
@@ -210,7 +215,7 @@ input[type="text"] {
 #registration {
   width: 80%;
   padding: 1rem;
-  margin: 0 auto 5rem auto;
+  margin: 100px auto 5rem auto;
 }
 
 form h1 {

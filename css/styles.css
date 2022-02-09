@@ -51,7 +51,12 @@ body {
 
 .navbar {
   height: 100px;
+  z-index: 1;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   justify-content: space-between;
   background: #0c1d29;
 }
@@ -217,7 +222,7 @@ img {
 .slideshow-container {
   width: 100%;
   position: relative;
-  margin: auto;
+  margin: 100px auto;
   background-color: #00080f;
 }
 
@@ -271,6 +276,7 @@ img {
   background-color: #bc1d1d;
   cursor: pointer;
   line-height: 30px;
+  margin-bottom: -100px;
 }
 
 .text i {
@@ -365,6 +371,7 @@ img {
 
 .movies-container img:hover {
   transform: scale(1.1);
+  background-color: #971d1d;
 }
 
 .movie-popup {
@@ -430,6 +437,10 @@ img {
   border-radius: 50%;
   border: 2px solid #ffffff;
   transition: 0.01s ease-in-out;
+}
+
+.movie-popup .close:hover {
+  background-color: #ffffff;
 }
 
 .movies-item {

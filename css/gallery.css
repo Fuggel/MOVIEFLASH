@@ -52,7 +52,12 @@ body {
 
 .navbar {
   height: 100px;
+  z-index: 1;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   justify-content: space-between;
   background: #0c1d29;
 }
@@ -207,6 +212,10 @@ input[type="text"] {
 
 /* Photo Gallery */
 
+.lightbox-wrapper {
+  margin-top: 150px;
+}
+
 h1 {
   text-align: center;
   margin-top: 50px;
@@ -232,7 +241,13 @@ h1 {
   height: 100%;
   cursor: pointer;
   background-color: #ffffff;
+  transition: 0.3s ease-in-out;
   padding: 5px;
+  border-radius: 10px;
+}
+
+.column img:hover {
+  background-color: #971d1d;
 }
 
 .row {

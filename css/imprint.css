@@ -52,7 +52,12 @@ body {
 
 .navbar {
   height: 100px;
+  z-index: 1;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   justify-content: space-between;
   background: #0c1d29;
 }
@@ -207,6 +212,7 @@ input[type="text"] {
 
 article {
   padding: 0 30px;
+  margin-top: 120px;
   margin-bottom: 100px;
 }
 
