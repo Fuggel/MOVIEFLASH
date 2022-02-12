@@ -63,9 +63,13 @@
     <div class="slideshow-container">
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
-        <a><img src="img/harry-potter.jpg" /></a>
-        <div onclick="toggle('#nobody')" class="text">
-          Harry Potter and the Half-Blood Prince<i
+        <a
+          ><img
+            src="img/harry-potter.jpg"
+            alt="Harry Potter and the Half-Blood Prince"
+        /></a>
+        <div onclick="toggle('#nobody'); stopVideo()" class="text">
+          Harry Potter and the Half-Blood Prince (2009)<i
             class="fas fa-play-circle"
           ></i>
         </div>
@@ -73,17 +77,17 @@
 
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
-        <a><img src="img/black-widow.jpg" /></a>
-        <div onclick="toggle('#nobody')" class="text">
-          Black Widow<i class="fas fa-play-circle"></i>
+        <a><img src="img/black-widow.jpg" alt="Black Widow" /></a>
+        <div onclick="toggle('#nobody'); stopVideo()" class="text">
+          Black Widow (2021)<i class="fas fa-play-circle"></i>
         </div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
-        <a><img src="img/nobody.jpg" /></a>
-        <div onclick="toggle('#nobody')" class="text">
-          Nobody<i class="fas fa-play-circle"></i>
+        <a><img src="img/nobody.jpg" alt="Nobody" /></a>
+        <div onclick="toggle('#nobody'); stopVideo()" class="text">
+          Nobody (2021)<i class="fas fa-play-circle"></i>
         </div>
       </div>
 
@@ -111,7 +115,8 @@
         <div class="movies-item">
           <img
             src="img-movies/nobody.jpg"
-            onclick="toggle('#nobody')"
+            onclick="toggle('#nobody');
+          stopVideo()"
             alt="nobody-movie"
           />
           <p>Nobody <br /><span>(2021)</span></p>
@@ -120,10 +125,11 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#nobody')"
+              onclick="toggle('#nobody'); stopVideo()"
+              alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/Nobody.mp4" controls="true"></video>
+              <video id="video" src="videos/Nobody.mp4" controls="true"></video>
               <div class="movie-popup-text">
                 <h2>Nobody</h2>
                 <p>
@@ -170,7 +176,12 @@
           <p>Raya and the Last Dragon <br /><span>(2021)</span></p>
 
           <div class="movie-popup" id="raya">
-            <img class="close" src="img/cancel.png" onclick="toggle('#raya')" />
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#raya')"
+              alt="close-button"
+            />
             <div class="popup-wrapper">
               <video src="videos/raya.mp4" controls="true"></video>
               <div class="movie-popup-text">
@@ -218,7 +229,12 @@
           <p>S.A.S. Red Notice <br /><span>(2021)</span></p>
 
           <div class="movie-popup" id="sas">
-            <img class="close" src="img/cancel.png" onclick="toggle('#sas')" />
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#sas')"
+              alt="close-button"
+            />
             <div class="popup-wrapper">
               <video src="videos/sas.mp4" controls="true"></video>
               <div class="movie-popup-text">
@@ -270,6 +286,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#takeback')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/takeback.mp4" controls="true"></video>
@@ -320,6 +337,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#redneg')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/redneg.mp4" controls="true"></video>
@@ -371,6 +389,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#thunderforce')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/thunderforce.mp4" controls="true"></video>
@@ -423,6 +442,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#triggerpoint')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/triggerpoint.mp4" controls="true"></video>
@@ -473,6 +493,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#vanquish')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/vanquish.mp4" controls="true"></video>
@@ -524,6 +545,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#justiceleague')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/justiceleague.mp4" controls="true"></video>
@@ -575,6 +597,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#vicious')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/vicious.mp4" controls="true"></video>
@@ -626,6 +649,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#godzilla')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/godzilla.mp4" controls="true"></video>
@@ -678,6 +702,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#mortalkombat')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/mortalkombat.mp4" controls="true"></video>
@@ -726,7 +751,12 @@
           <p>S.A.S. Red Notice <br /><span>(2021)</span></p>
 
           <div class="movie-popup" id="sas">
-            <img class="close" src="img/cancel.png" onclick="toggle('#sas')" />
+            <img
+              class="close"
+              src="img/cancel.png"
+              onclick="toggle('#sas')"
+              alt="close-button"
+            />
             <div class="popup-wrapper">
               <video src="videos/sas.mp4" controls="true"></video>
             </div>
@@ -746,6 +776,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#takeback')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/takeback.mp4" controls="true"></video>
@@ -766,6 +797,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#redneg')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/redneg.mp4" controls="true"></video>
@@ -786,6 +818,7 @@
               class="close"
               src="img/cancel.png"
               onclick="toggle('#thunderforce')"
+              alt="close-button"
             />
             <div class="popup-wrapper">
               <video src="videos/thunderforce.mp4" controls="true"></video>
