@@ -14,19 +14,19 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
+function plusSlides(number) {
   // Increase the slide by 1 and show that image
-  showSlides((slideIndex += n));
+  showSlides((slideIndex += number));
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
+function currentSlide(number) {
   // Show the current slide
-  showSlides((slideIndex = n));
+  showSlides((slideIndex = number));
 }
 
 // Toggle correct slides
-function showSlides(n) {
+function showSlides(number) {
   let i;
   // All of the slides in the document
   let slides = document.getElementsByClassName("mySlides");
@@ -36,12 +36,12 @@ function showSlides(n) {
   let captionText = document.getElementById("caption");
 
   // If slide # is greater than the total number of slides
-  if (n > slides.length) {
+  if (number > slides.length) {
     slideIndex = 1;
   }
 
   // If slide # is less than total number of slides
-  if (n < 1) {
+  if (number < 1) {
     slideIndex = slides.length;
   }
 
