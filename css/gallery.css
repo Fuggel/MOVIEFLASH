@@ -22,8 +22,8 @@ body {
   position: fixed;
   bottom: 16px;
   right: 32px;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@ body {
   bottom: 32px;
   pointer-events: auto;
   opacity: 1;
-  z-index: 1000;
+  z-index: 1;
 }
 
 /* Navbar */
@@ -223,10 +223,10 @@ h1 {
 }
 
 #caption {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   background-color: #bc1d1d;
-  padding: 8px 20px;
+  padding: 5px 15px;
   display: inline-block;
   border-radius: 10px;
 }
@@ -303,6 +303,7 @@ h1 {
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  transition: 0.2s ease-in-out;
 }
 
 .close:hover,
@@ -398,6 +399,7 @@ img.demo {
   align-items: center;
   flex-direction: column;
   padding: 0 20px;
+  max-width: 30%;
 }
 
 .movie-popup-text h2 {
@@ -430,8 +432,13 @@ img.demo {
   padding: 0;
   background: #ffffff;
   border-radius: 50%;
-  border: 2px solid #ffffff;
-  transition: 0.01s ease-in-out;
+  border: 1px solid #ffffff;
+  transition: 0.2s ease-in-out;
+  transform: none !important;
+}
+
+.movie-popup .close:hover {
+  background-color: #cccccc;
 }
 
 .movies-item {
@@ -616,6 +623,10 @@ footer ul li a {
     width: 100%;
     background-color: none;
     margin-top: 30px;
+  }
+
+  .movie-popup-text {
+    max-width: none;
   }
 
   .movie-popup-text h2 {

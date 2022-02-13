@@ -18,7 +18,6 @@
     />
 
     <!-- JavaScript -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="js/index.js" defer></script>
     <script src="js/gallery.js" defer></script>
     <script src="js/popup.js" defer></script>
@@ -72,7 +71,7 @@
       <div class="column">
         <img
           src="img/harry-potter.jpg"
-          onclick="openModal();currentSlide(1)"
+          onclick="openModal();currentSlide(1);"
           class="hover-shadow"
           alt="Harry Potter and the Half-Blood Prince"
         />
@@ -165,11 +164,15 @@
               <img
                 class="close"
                 src="img/cancel.png"
-                onclick="toggle('#nobody')"
+                onclick="toggle('#nobody', 'video')"
                 alt="close-button"
               />
               <div class="popup-wrapper">
-                <video src="videos/Nobody.mp4" controls="true"></video>
+                <video
+                  id="video"
+                  src="videos/Nobody.mp4"
+                  controls="true"
+                ></video>
                 <div class="movie-popup-text">
                   <h2>Nobody</h2>
                   <p>

@@ -22,8 +22,8 @@ body {
   position: fixed;
   bottom: 16px;
   right: 32px;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -403,6 +403,7 @@ img {
   align-items: center;
   flex-direction: column;
   padding: 0 20px;
+  max-width: 30%;
 }
 
 .movie-popup-text h2 {
@@ -435,12 +436,13 @@ img {
   padding: 0;
   background: #ffffff;
   border-radius: 50%;
-  border: 2px solid #ffffff;
-  transition: 0.01s ease-in-out;
+  border: 1px solid #ffffff;
+  transition: 0.2s ease-in-out;
+  transform: none !important;
 }
 
 .movie-popup .close:hover {
-  background-color: #ffffff;
+  background-color: #cccccc;
 }
 
 .movies-item {
@@ -616,6 +618,10 @@ footer ul li a {
     width: 100%;
     background-color: none;
     margin-top: 30px;
+  }
+
+  .movie-popup-text {
+    max-width: none;
   }
 
   .movie-popup-text h2 {

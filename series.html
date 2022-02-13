@@ -18,7 +18,6 @@
     />
 
     <!-- JavaScript -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="js/index.js" defer></script>
     <script src="js/popup.js" defer></script>
   </head>
@@ -83,11 +82,11 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#nobody')"
+              onclick="toggle('#nobody', 'video')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/Nobody.mp4" controls="true"></video>
+              <video id="video" src="videos/Nobody.mp4" controls="true"></video>
               <div class="movie-popup-text">
                 <h2>Nobody</h2>
                 <p>
@@ -137,11 +136,11 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#raya')"
+              onclick="toggle('#raya', 'video2')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/raya.mp4" controls="true"></video>
+              <video id="video2" src="videos/raya.mp4" controls="true"></video>
               <div class="movie-popup-text">
                 <h2>Raya and the Last Dragon</h2>
                 <p>
@@ -190,11 +189,11 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#sas')"
+              onclick="toggle('#sas', 'video3')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/sas.mp4" controls="true"></video>
+              <video id="video3" src="videos/sas.mp4" controls="true"></video>
               <div class="movie-popup-text">
                 <h2>S.A.S. Red Notice</h2>
                 <p>
@@ -243,11 +242,15 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#takeback')"
+              onclick="toggle('#takeback', 'video4')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/takeback.mp4" controls="true"></video>
+              <video
+                id="video4"
+                src="videos/takeback.mp4"
+                controls="true"
+              ></video>
               <div class="movie-popup-text">
                 <h2>Take Back</h2>
                 <p>
@@ -294,11 +297,15 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#redneg')"
+              onclick="toggle('#redneg', 'video5')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/redneg.mp4" controls="true"></video>
+              <video
+                id="video5"
+                src="videos/redneg.mp4"
+                controls="true"
+              ></video>
               <div class="movie-popup-text">
                 <h2>The Redneg</h2>
                 <p>
@@ -346,11 +353,15 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#thunderforce')"
+              onclick="toggle('#thunderforce', 'video6')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/thunderforce.mp4" controls="true"></video>
+              <video
+                id="video6"
+                src="videos/thunderforce.mp4"
+                controls="true"
+              ></video>
               <div class="movie-popup-text">
                 <h2>Thunder Force</h2>
                 <p>
@@ -399,11 +410,15 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#triggerpoint')"
+              onclick="toggle('#triggerpoint', 'video7')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/triggerpoint.mp4" controls="true"></video>
+              <video
+                id="video7"
+                src="videos/triggerpoint.mp4"
+                controls="true"
+              ></video>
               <div class="movie-popup-text">
                 <h2>Trigger Point</h2>
                 <p>
@@ -450,11 +465,15 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#vanquish')"
+              onclick="toggle('#vanquish', 'video8')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/vanquish.mp4" controls="true"></video>
+              <video
+                id="video8"
+                src="videos/vanquish.mp4"
+                controls="true"
+              ></video>
               <div class="movie-popup-text">
                 <h2>Vanquish</h2>
                 <p>
@@ -511,11 +530,15 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#vicious')"
+              onclick="toggle('#vicious', 'video9')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/vicious.mp4" controls="true"></video>
+              <video
+                id="video9"
+                src="videos/vicious.mp4"
+                controls="true"
+              ></video>
               <div class="movie-popup-text">
                 <h2>For the Sake of Vicious</h2>
                 <p>
@@ -563,11 +586,15 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#godzilla')"
+              onclick="toggle('#godzilla', 'video10')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/godzilla.mp4" controls="true"></video>
+              <video
+                id="video10"
+                src="videos/godzilla.mp4"
+                controls="true"
+              ></video>
               <div class="movie-popup-text">
                 <h2>Godzilla vs. Kong</h2>
                 <p>
@@ -616,11 +643,15 @@
             <img
               class="close"
               src="img/cancel.png"
-              onclick="toggle('#mortalkombat')"
+              onclick="toggle('#mortalkombat', 'video11')"
               alt="close-button"
             />
             <div class="popup-wrapper">
-              <video src="videos/mortalkombat.mp4" controls="true"></video>
+              <video
+                id="video11"
+                src="videos/mortalkombat.mp4"
+                controls="true"
+              ></video>
               <div class="movie-popup-text">
                 <h2>Mortal Kombat</h2>
                 <p>

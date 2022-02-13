@@ -15,6 +15,7 @@ window.addEventListener("scroll", () => {
     // If User scrolls more than 100px from y axis -> button appears
     BackToTop.classList.add("active");
   } else {
+    // Else (less than 100px) -> remove css class active
     BackToTop.classList.remove("active");
   }
 });
